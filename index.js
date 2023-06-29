@@ -1,6 +1,19 @@
-function isPalindrome(word) {
+
   // Write your algorithm here
-}
+  function isPalindrome(word) {
+    // Write your algorithm here
+    const a= word.split('');
+    const b=[];
+    for (let i = word.length -1; i !=-1; i--){
+      b.push(word[i])
+       }  return (Array.isArray(a) &&
+      Array.isArray(b) &&
+      a.length === b.length &&
+      a.every((val, index) => val === b[index]))
+      
+    }
+ // console.log(isPalindrome('racecar'));
+
 
 /* 
   Add your pseudocode here
